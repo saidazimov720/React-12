@@ -4,11 +4,13 @@ import MovieList from './Components/MovieList';
 import MovieDetails from './Components/MovieDetails';
 import Favorites from './Components/Favourites';
 import Watchlist from './Components/WatchList';
+import Header from './Components/Header';
 
 const App = () => {
   return (
     <Router>
-      <Routes>
+            <Header></Header>
+            <Routes>
         <Route path="/" element={<MovieList />} />
         <Route path="/movie/:id" element={<MovieDetails />} />
         <Route path="/favorites" element={<Favorites />} />
